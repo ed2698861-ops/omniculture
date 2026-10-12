@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html>
+
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MAB KOM ACTIVITY</title>
+
+  <style>
+    
+  </style>
+
+  
+</head>
+<body>
+  <!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OmniCulture | Global Heritage & Perspectives Platform</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts: Newsreader (Serif) & Inter (Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        terracotta: '#9A3412',
+                        terracottaHover: '#7C2D12',
+                        terracottaLight: '#FFEDD5',
+                        amberAccent: '#D97706',
+                        amberBright: '#F59E0B',
+                        warmPaper: '#FDFBF7',
+                        warmPaperDark: '#F5EFE6',
+                        editorialDark: '#1C1917',
+                        editorialMuted: '#57534E',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Newsreader', 'Georgia', 'serif'],
+                    },
+                    keyframes: {
+                        pulseRing: {
+                            '0%, 100%': { transform: 'scale(1)', opacity: '0.8' },
+                            '50%': { transform: 'scale(1.25)', opacity: '0.3' }
+                        },
+                        rotateSun: {
+                            'from': { transform: 'rotate(0deg)' },
+                            'to': { transform: 'rotate(360deg)' }
+                        },
+                        scrollUp: {
+                            '0%': { transform: 'translateY(0)' },
+                            '100%': { transform: 'translateY(-50%)' }
+                        },
+                        scrollDown: {
+                            '0%': { transform: 'translateY(-50%)' },
+                            '100%': { transform: 'translateY(0)' }
+                        },
+                        floatUp: {
+                            '0%': { transform: 'translateY(20px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' }
+                        }
+                    },
+                    animation: {
+                        'pulse-ring': 'pulseRing 3s ease-in-out infinite',
+                        'sunbeam-spin': 'rotateSun 22s linear infinite',
+                        'scroll-up': 'scrollUp 28s linear infinite',
+                        'scroll-down': 'scrollDown 28s linear infinite',
+                        'float-up': 'floatUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #FDFBF7;
+            color: #1C1917;
+            font-family: 'Inter', sans-serif;
+            text-rendering: optimizeLegibility;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .article-body p {
+            font-size: 1.1rem;
+            line-height: 1.9;
+            color: #292524;
+            margin-bottom: 1.75rem;
+        }
+
+        .article-body h2 {
+            font-family: 'Newsreader', Georgia, serif;
+            font-size: 2.1rem;
+            font-weight: 700;
+            color: #1C1917;
+            margin-top: 3.25rem;
+            margin-bottom: 1.25rem;
+            line-height: 1.25;
+            letter-spacing: -0.01em;
+        }
+
+        .article-body h3 {
+            font-family: 'Newsreader', Georgia, serif;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #7C2D12;
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .article-body blockquote {
+            font-family: 'Newsreader', Georgia, serif;
+            font-style: italic;
+            font-size: 1.4rem;
+            line-height: 1.6;
+            color: #7C2D12;
+            border-left: 4px solid #9A3412;
+            padding-left: 1.5rem;
+            margin: 2.5rem 0;
+            background-color: #FFEDD5;
+            padding-top: 1.25rem;
+            padding-bottom: 1.25rem;
+            border-radius: 0 0.85rem 0.85rem 0;
+        }
+
+        .glass-modal {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(251, 191, 36, 0.3);
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen relative overflow-x-hidden">
+
+    <!-- CINEMATIC INTRO OVERLAY -->
+    <div id="intro-container" class="fixed inset-0 z-50 bg-amber-950 flex flex-col items-center justify-center overflow-hidden transition-all duration-1000">
+
+        <!-- INFINITE SCROLLING BACKGROUND OF GLOBAL CULTURAL CARDS -->
+        <div class="absolute inset-0 grid grid-cols-2 sm:grid-cols-3 gap-4 p-4 opacity-40 mix-blend-screen pointer-events-none transform -rotate-6 scale-110">
+            
+            <!-- Column 1: Upward Scroll -->
+            <div class="flex flex-col gap-4 animate-scroll-up">
+                <div class="bg-amber-900/40 border border-amber-500/30 p-4 rounded-2xl backdrop-blur-md shadow-xl text-amber-100">
+                    <img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&q=80&w=400" class="w-full h-32 object-cover rounded-xl mb-3" alt="Pinoy Culture">
+                    <span class="text-[10px] uppercase font-bold tracking-widest text-amber-400">Filipino Traditions</span>
+                    <h4 class="font-serif font-bold text-sm text-white mt-1">Sining at Bayanihan</h4>
+                    <p class="text-[11px] text-stone-300 line-clamp-2 mt-1">Super wholesome community spirit fr. Everyone coming together for the win.</p>
+                </div>
+                <div class="bg-amber-900/40 border border-amber-500/30 p-4 rounded-2xl backdrop-blur-md shadow-xl text-amber-100">
+                    <img src="https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&q=80&w=400" class="w-full h-32 object-cover rounded-xl mb-3" alt="Wabi Sabi">
+                    <span class="text-[10px] uppercase font-bold tracking-widest text-amber-400">Japanese Zen Vibes</span>
+                    <h4 class="font-serif font-bold text-sm text-white mt-1">Wabi Sabi Life</h4>
+                    <p class="text-[11px] text-stone-300 line-clamp-2 mt-1">Finding total peace in raw, imperfect aesthetics. Such a vibe ngl.</p>
+                </div>
+            </div>
+
+            <!-- Column 2: Downward Scroll -->
+            <div class="flex flex-col gap-4 animate-scroll-down">
+                <div class="bg-amber-900/40 border border-amber-500/30 p-4 rounded-2xl backdrop-blur-md shadow-xl text-amber-100">
+                    <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&q=80&w=400" class="w-full h-32 object-cover rounded-xl mb-3" alt="African Ubuntu">
+                    <span class="text-[10px] uppercase font-bold tracking-widest text-amber-400">Bantu Wisdom</span>
+                    <h4 class="font-serif font-bold text-sm text-white mt-1">Ubuntu Principle</h4>
+                    <p class="text-[11px] text-stone-300 line-clamp-2 mt-1">"I am because we are" is lowkey the best life philosophy ever written.</p>
+                </div>
+                <div class="bg-amber-900/40 border border-amber-500/30 p-4 rounded-2xl backdrop-blur-md shadow-xl text-amber-100">
+                    <img src="https://images.unsplash.com/photo-1512813195386-6cf811ad3542?auto=format&fit=crop&q=80&w=400" class="w-full h-32 object-cover rounded-xl mb-3" alt="Dia de Muertos">
+                    <span class="text-[10px] uppercase font-bold tracking-widest text-amber-400">Mexican Heritage</span>
+                    <h4 class="font-serif font-bold text-sm text-white mt-1">Día de los Muertos</h4>
+                    <p class="text-[11px] text-stone-300 line-clamp-2 mt-1">Honoring family memories with colorful flowers and beautiful altars.</p>
+                </div>
+            </div>
+
+            <!-- Column 3: Upward Scroll -->
+            <div class="hidden sm:flex flex-col gap-4 animate-scroll-up">
+                <div class="bg-amber-900/40 border border-amber-500/30 p-4 rounded-2xl backdrop-blur-md shadow-xl text-amber-100">
+                    <img src="https://images.unsplash.com/photo-1528164344705-47542687990d?auto=format&fit=crop&q=80&w=400" class="w-full h-32 object-cover rounded-xl mb-3" alt="Global Youth">
+                    <span class="text-[10px] uppercase font-bold tracking-widest text-amber-400">Youth Movements</span>
+                    <h4 class="font-serif font-bold text-sm text-white mt-1">Culture Creators</h4>
+                    <p class="text-[11px] text-stone-300 line-clamp-2 mt-1">Gen Z keeping ancient traditions alive with fresh digital energy.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-amber-950/80 to-stone-950/90 pointer-events-none"></div>
+
+        <!-- STAGE 1: INTRO LOADING -->
+        <div id="intro-stage-1" class="relative z-10 flex flex-col items-center max-w-md px-6 text-center transition-all duration-700">
+            <div class="relative w-28 h-28 mb-6 flex items-center justify-center">
+                <div class="absolute w-36 h-36 bg-amber-500/30 rounded-full blur-2xl animate-pulse-ring pointer-events-none"></div>
+                <svg class="absolute inset-0 w-full h-full text-amber-400 animate-sunbeam-spin drop-shadow-[0_0_15px_rgba(245,158,11,0.6)]" viewBox="0 0 100 100" fill="currentColor">
+                    <circle cx="50" cy="50" r="42" fill="none" stroke="currentColor" stroke-width="1.5" stroke-dasharray="4 6" />
+                    <path d="M50 0 L53 12 L50 24 L47 12 Z M50 76 L53 88 L50 100 L47 88 Z M0 50 L12 47 L24 50 L12 53 Z M76 50 L88 47 L100 50 L88 53 Z" />
+                </svg>
+                <div class="w-16 h-16 rounded-full bg-gradient-to-tr from-terracotta via-amberAccent to-amberBright flex items-center justify-center shadow-2xl relative z-10 border-2 border-amber-200/50">
+                    <span class="font-serif font-extrabold text-2xl text-white tracking-widest">O</span>
+                </div>
+            </div>
+
+            <h1 class="font-serif text-4xl sm:text-5xl font-extrabold text-amber-100 tracking-tight mb-2">
+                Omni<span class="text-amberBright">Culture</span>
+            </h1>
+            <p class="text-xs uppercase tracking-[0.2em] text-amber-200/90 font-medium mb-8">
+                Global Stories • Real Voices • Authentic Heritage
+            </p>
+
+            <div class="w-full bg-stone-900/80 rounded-full h-2.5 mb-3 overflow-hidden border border-amber-500/30 p-0.5">
+                <div id="intro-progress" class="bg-gradient-to-r from-terracotta via-amberAccent to-amberBright h-full rounded-full w-0 transition-all duration-300 ease-out"></div>
+            </div>
+            <div id="intro-status" class="text-[11px] font-mono text-amber-300/80 mb-6">Setting up your feed... 0%</div>
+        </div>
+
+        <!-- STAGE 2: ACCESS MODAL -->
+        <div id="intro-stage-2" class="hidden relative z-20 max-w-md w-full px-4 animate-float-up">
+            <div class="glass-modal rounded-3xl p-6 sm:p-8 shadow-2xl border border-amber-300/40 relative">
+                <div class="text-center mb-6">
+                    <div class="w-12 h-12 rounded-2xl bg-gradient-to-tr from-terracotta to-amberAccent text-white font-serif font-bold text-2xl flex items-center justify-center mx-auto mb-3 shadow-md">
+                        O
+                    </div>
+                    <h2 class="font-serif text-2xl sm:text-3xl font-bold text-editorialDark">Welcome to OmniCulture</h2>
+                    <p class="text-xs text-editorialMuted mt-1">Jump right in to explore stories, drop comments, and join discussions!</p>
+                </div>
+
+                <form onsubmit="handleUserLogin(event)" class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-semibold text-editorialDark mb-1">Your Display Name</label>
+                        <input type="text" id="user-display-name" placeholder="e.g. Alex Rivers" class="w-full px-4 py-2.5 rounded-xl border border-stone-300 text-sm focus:outline-none focus:ring-2 focus:ring-terracotta bg-white/90">
+                    </div>
+
+                    <button type="submit" class="w-full py-3 bg-gradient-to-r from-terracotta to-amber-800 hover:from-terracottaHover text-white font-semibold text-xs uppercase tracking-wider rounded-xl shadow-lg transition">
+                        Jump In & Explore Feed
+                    </button>
+                </form>
+
+                <div class="relative my-5 text-center">
+                    <span class="bg-amber-50 px-3 text-[11px] text-editorialMuted relative z-10 rounded-full border border-amber-200">or quick access</span>
+                    <div class="absolute inset-0 flex items-center"><div class="w-full border-t border-stone-300/70"></div></div>
+                </div>
+
+                <button onclick="enterMainBlog('Guest Explorer')" class="w-full py-3 bg-white/90 hover:bg-white text-editorialDark font-semibold text-xs uppercase tracking-wider rounded-xl border border-stone-300 shadow-sm transition flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-compass text-terracotta"></i>
+                    <span>Browse as Guest</span>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- MAIN PLATFORM HEADER NAVIGATION -->
+    <header class="sticky top-0 z-40 bg-warmPaper/95 backdrop-blur-md border-b border-amber-900/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between gap-4">
+            <a href="#" onclick="showFeedView()" class="flex items-center gap-2.5 group shrink-0">
+                <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-terracotta to-amberAccent text-white flex items-center justify-center font-serif font-extrabold text-xl shadow-sm group-hover:scale-105 transition">
+                    O
+                </div>
+                <span class="font-serif text-2xl font-bold tracking-tight text-editorialDark group-hover:text-terracotta transition">
+                    Omni<span class="text-terracotta">Culture</span>
+                </span>
+            </a>
+
+            <!-- Search Bar -->
+            <div class="hidden md:flex flex-1 max-w-md relative">
+                <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-stone-400 text-xs"></i>
+                <input type="text" id="feed-search" oninput="filterPosts()" placeholder="Search cultures, topics, or countries..." class="w-full pl-9 pr-4 py-2 rounded-full border border-stone-200 bg-stone-50 text-xs focus:outline-none focus:ring-2 focus:ring-terracotta transition">
+            </div>
+            
+            <!-- Navigation Action Buttons -->
+            <div class="flex items-center space-x-3 shrink-0">
+                <button onclick="showFeedView()" id="feed-btn-nav" class="hidden text-xs font-semibold text-terracotta bg-terracottaLight px-3.5 py-2 rounded-full flex items-center gap-1.5 shadow-sm">
+                    <i class="fa-solid fa-grid-2 text-xs"></i>
+                    <span>All Articles</span>
+                </button>
+
+                <button onclick="replayCinematicIntro()" class="text-xs font-semibold text-editorialMuted bg-stone-100 hover:bg-terracottaLight hover:text-terracotta px-3.5 py-2 rounded-full transition flex items-center gap-1.5 shadow-sm">
+                    <i class="fa-solid fa-rotate-left text-[11px] text-terracotta"></i>
+                    <span class="hidden sm:inline">Intro</span>
+                </button>
+
+                <div id="user-badge" class="flex items-center gap-2 pl-2 border-l border-stone-200">
+                    <div class="w-7 h-7 rounded-full bg-amber-100 text-terracotta flex items-center justify-center font-bold text-xs border border-amber-300">
+                        <i class="fa-solid fa-user text-[10px]"></i>
+                    </div>
+                    <span id="user-name-display" class="text-xs font-semibold text-editorialDark">Guest</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- VIEW 1: MULTI-POST FEED CONTAINER -->
+    <main id="feed-container" class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 py-8 w-full">
+        
+        <!-- Category Filter Pills -->
+        <div class="flex items-center gap-2 overflow-x-auto pb-4 mb-8 border-b border-stone-200/60">
+            <button onclick="setCategoryFilter('all')" class="cat-pill px-4 py-2 rounded-full text-xs font-semibold bg-editorialDark text-white shadow-sm shrink-0 transition" data-cat="all">All Stories</button>
+            <button onclick="setCategoryFilter('featured')" class="cat-pill px-4 py-2 rounded-full text-xs font-semibold bg-stone-100 hover:bg-stone-200 text-editorialMuted shrink-0 transition" data-cat="featured">🌟 Featured Assignment</button>
+            <button onclick="setCategoryFilter('asia')" class="cat-pill px-4 py-2 rounded-full text-xs font-semibold bg-stone-100 hover:bg-stone-200 text-editorialMuted shrink-0 transition" data-cat="asia">Asia & Pacific</button>
+            <button onclick="setCategoryFilter('americas')" class="cat-pill px-4 py-2 rounded-full text-xs font-semibold bg-stone-100 hover:bg-stone-200 text-editorialMuted shrink-0 transition" data-cat="americas">Americas</button>
+            <button onclick="setCategoryFilter('europe')" class="cat-pill px-4 py-2 rounded-full text-xs font-semibold bg-stone-100 hover:bg-stone-200 text-editorialMuted shrink-0 transition" data-cat="europe">Europe</button>
+            <button onclick="setCategoryFilter('africa')" class="cat-pill px-4 py-2 rounded-full text-xs font-semibold bg-stone-100 hover:bg-stone-200 text-editorialMuted shrink-0 transition" data-cat="africa">Africa & Middle East</button>
+        </div>
+
+        <!-- HERO FEATURED POST BANNER (Main Class Tagalog Assignment Article) -->
+        <div id="featured-hero-card" class="mb-12 bg-gradient-to-br from-amber-950 via-stone-900 to-amber-900 rounded-3xl overflow-hidden shadow-2xl border border-amber-500/30 text-amber-50 grid grid-cols-1 lg:grid-cols-12 relative group">
+            <div class="lg:col-span-7 p-6 sm:p-10 flex flex-col justify-between relative z-10">
+                <div>
+                    <div class="flex flex-wrap items-center gap-2 mb-4">
+                        <span class="text-[10px] font-extrabold uppercase tracking-widest text-amber-300 bg-amber-500/20 px-3 py-1 rounded-full border border-amber-400/30">🌟 Featured Assignment</span>
+                        <span class="text-[10px] font-bold uppercase tracking-wider text-amber-200 bg-stone-800/80 px-2.5 py-1 rounded-full">Tagalog • Philippines</span>
+                    </div>
+
+                    <h2 class="font-serif text-2xl sm:text-4xl font-extrabold text-white leading-tight mb-4 group-hover:text-amber-300 transition">
+                        Pagkakakilanlan at Kultura: Ang Makulay na Pamana ng Lahing Pilipino
+                    </h2>
+
+                    <p class="font-serif text-sm sm:text-base text-stone-300 italic line-clamp-3 mb-6">
+                        Isang Malalim na Pagninilay sa Ating Sining, Wika, at Kilusang Panlipunan sa Gitna ng Makabagong Panahon at Globalisasyon. Isinulat ng Group 1.
+                    </p>
+                </div>
+
+                <div class="flex items-center justify-between pt-4 border-t border-amber-500/20">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-terracotta text-white font-bold flex items-center justify-center border-2 border-amber-400 shadow-md">
+                            G1
+                        </div>
+                        <div>
+                            <div class="text-xs font-bold text-amber-100">Group 1 • 8 Authors</div>
+                            <div class="text-[11px] text-amber-300/80">October 12, 2026 • 8 min read</div>
+                        </div>
+                    </div>
+
+                    <button onclick="openArticle('hero')" class="px-5 py-2.5 bg-gradient-to-r from-terracotta to-amberAccent hover:from-terracottaHover text-white font-semibold text-xs rounded-xl shadow-lg transition flex items-center gap-2">
+                        <span>Read Full Essay</span>
+                        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="lg:col-span-5 relative min-h-[260px] lg:min-h-full overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&q=80&w=1000" alt="Filipino Heritage" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                <div class="absolute inset-0 bg-gradient-to-t lg:bg-gradient-to-r from-stone-950 via-stone-950/40 to-transparent"></div>
+            </div>
+        </div>
+
+        <!-- POSTS GRID -->
+        <h3 class="font-serif text-2xl font-bold text-editorialDark mb-6 flex items-center justify-between">
+            <span>Explore Cultural Perspectives</span>
+            <span class="text-xs font-sans font-normal text-editorialMuted">Showing all categories</span>
+        </h3>
+
+        <div id="posts-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+            
+            <!-- Post Card 1: Japan -->
+            <article class="post-card bg-white rounded-2xl overflow-hidden border border-stone-200/80 shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between" data-category="asia">
+                <div>
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&q=80&w=600" alt="Japanese Tea Ceremony" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 left-3 bg-stone-900/80 text-white text-[10px] font-semibold px-2.5 py-1 rounded-full uppercase tracking-wider">Asia • Japan</span>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex items-center gap-2 text-xs text-editorialMuted mb-2">
+                            <span>By Kenji Sato</span>
+                            <span>•</span>
+                            <span>4 min read</span>
+                        </div>
+                        <h4 class="font-serif font-bold text-lg text-editorialDark leading-snug mb-2 hover:text-terracotta transition">
+                            The Philosophy of Wabi Sabi: Perfection in Imperfection
+                        </h4>
+                        <p class="text-xs text-editorialMuted line-clamp-3 leading-relaxed">
+                            How traditional Japanese aesthetics teach us to embrace worn edges, natural cracks, and the passing of time. This mindset is lowkey life changing.
+                        </p>
+                    </div>
+                </div>
+                <div class="px-5 pb-5 pt-2 flex items-center justify-between border-t border-stone-100">
+                    <span class="text-[11px] font-semibold text-amber-800 bg-amber-50 px-2 py-0.5 rounded border border-amber-200">#Philosophy</span>
+                    <button onclick="openArticle('wabi-sabi')" class="text-xs font-bold text-terracotta hover:underline flex items-center gap-1">
+                        <span>Read More</span>
+                        <i class="fa-solid fa-chevron-right text-[9px]"></i>
+                    </button>
+                </div>
+            </article>
+
+            <!-- Post Card 2: Mexico -->
+            <article class="post-card bg-white rounded-2xl overflow-hidden border border-stone-200/80 shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between" data-category="americas">
+                <div>
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1512813195386-6cf811ad3542?auto=format&fit=crop&q=80&w=600" alt="Dia de los Muertos" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 left-3 bg-stone-900/80 text-white text-[10px] font-semibold px-2.5 py-1 rounded-full uppercase tracking-wider">Americas • Mexico</span>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex items-center gap-2 text-xs text-editorialMuted mb-2">
+                            <span>By Sofia Ramirez</span>
+                            <span>•</span>
+                            <span>6 min read</span>
+                        </div>
+                        <h4 class="font-serif font-bold text-lg text-editorialDark leading-snug mb-2 hover:text-terracotta transition">
+                            Día de los Muertos: Celebrating Family Memories with Joy
+                        </h4>
+                        <p class="text-xs text-editorialMuted line-clamp-3 leading-relaxed">
+                            Vibrant marigold flowers, custom altars, and incredible food turn memory into a pure celebration. Sheesh, the warmth of this festival is unreal!
+                        </p>
+                    </div>
+                </div>
+                <div class="px-5 pb-5 pt-2 flex items-center justify-between border-t border-stone-100">
+                    <span class="text-[11px] font-semibold text-amber-800 bg-amber-50 px-2 py-0.5 rounded border border-amber-200">#Traditions</span>
+                    <button onclick="openArticle('dia-muertos')" class="text-xs font-bold text-terracotta hover:underline flex items-center gap-1">
+                        <span>Read More</span>
+                        <i class="fa-solid fa-chevron-right text-[9px]"></i>
+                    </button>
+                </div>
+            </article>
+
+            <!-- Post Card 3: Africa -->
+            <article class="post-card bg-white rounded-2xl overflow-hidden border border-stone-200/80 shadow-sm hover:shadow-xl transition duration-300 flex flex-col justify-between" data-category="africa">
+                <div>
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&q=80&w=600" alt="African Community" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                        <span class="absolute top-3 left-3 bg-stone-900/80 text-white text-[10px] font-semibold px-2.5 py-1 rounded-full uppercase tracking-wider">Africa • Southern Region</span>
+                    </div>
+                    <div class="p-5">
+                        <div class="flex items-center gap-2 text-xs text-editorialMuted mb-2">
+                            <span>By Thabo Ndlovu</span>
+                            <span>•</span>
+                            <span>5 min read</span>
+                        </div>
+                        <h4 class="font-serif font-bold text-lg text-editorialDark leading-snug mb-2 hover:text-terracotta transition">
+                            Ubuntu Wisdom: "I Am Because We Are"
+                        </h4>
+                        <p class="text-xs text-editorialMuted line-clamp-3 leading-relaxed">
+                            Exploring the ancient Bantu concept of genuine empathy and community bond. Tbh, individualism could learn a lot from this worldview.
+                        </p>
+                    </div>
+                </div>
+                <div class="px-5 pb-5 pt-2 flex items-center justify-between border-t border-stone-100">
+                    <span class="text-[11px] font-semibold text-amber-800 bg-amber-50 px-2 py-0.5 rounded border border-amber-200">#Community</span>
+                    <button onclick="openArticle('ubuntu')" class="text-xs font-bold text-terracotta hover:underline flex items-center gap-1">
+                        <span>Read More</span>
+                        <i class="fa-solid fa-chevron-right text-[9px]"></i>
+                    </button>
+                </div>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- VIEW 2: ARTICLE READING VIEW (HIDDEN BY DEFAULT) -->
+    <main id="article-view" class="hidden flex-grow max-w-7xl mx-auto px-4 sm:px-6 py-8 w-full">
+        
+        <!-- Breadcrumb & Top Bar -->
+        <div class="flex items-center justify-between mb-8 pb-4 border-b border-stone-200">
+            <button onclick="showFeedView()" class="inline-flex items-center gap-2 text-xs font-semibold text-terracotta hover:text-terracottaHover bg-terracottaLight/80 hover:bg-terracottaLight px-4 py-2.5 rounded-full transition shadow-sm">
+                <i class="fa-solid fa-arrow-left"></i>
+                <span>Back to Stories</span>
+            </button>
+            <div class="flex items-center gap-2">
+                <span id="article-category-badge" class="text-xs font-bold uppercase tracking-wider text-amber-800 bg-amber-100 px-3.5 py-1 rounded-full">Tagalog • Featured Essay</span>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+            
+            <!-- LEFT / CENTER COLUMN: ARTICLE CONTENT & COMMENTS (LG: COL-SPAN-8) -->
+            <div class="lg:col-span-8">
+                
+                <!-- Article Header -->
+                <header class="mb-8">
+                    <h1 id="article-title" class="font-serif text-3xl sm:text-5xl font-extrabold text-editorialDark leading-tight mb-4">
+                        Pagkakakilanlan at Kultura: Ang Makulay na Pamana ng Lahing Pilipino
+                    </h1>
+                    <p id="article-subtitle" class="font-serif text-lg sm:text-xl text-editorialMuted italic leading-relaxed mb-6">
+                        Isang Malalim na Pagninilay sa Ating Sining, Wika, Tradisyon, at Kilusang Panlipunan sa Gitna ng Makabagong Panahon.
+                    </p>
+
+                    <!-- Author Byline Summary Bar -->
+                    <div class="flex items-center justify-between p-4 rounded-2xl bg-warmPaperDark border border-amber-900/10">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-11 h-11 rounded-full bg-gradient-to-tr from-terracotta to-amberAccent text-white font-bold flex items-center justify-center border-2 border-white shadow-md">
+                                G1
+                            </div>
+                            <div>
+                                <div id="article-author-name" class="font-bold text-sm text-editorialDark">Group 1</div>
+                                <div id="article-date-read" class="text-xs text-editorialMuted">Oktubre 12, 2026 • 8 Minuto Basahin</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center space-x-2">
+                            <button onclick="toggleBookmark()" id="bookmark-btn" class="w-9 h-9 rounded-full bg-white border border-stone-200 text-stone-600 hover:text-terracotta flex items-center justify-center transition shadow-sm" title="Bookmark">
+                                <i class="fa-regular fa-bookmark"></i>
+                            </button>
+                            <button onclick="shareArticle()" class="w-9 h-9 rounded-full bg-white border border-stone-200 text-stone-600 hover:text-terracotta flex items-center justify-center transition shadow-sm" title="Share">
+                                <i class="fa-solid fa-share-nodes"></i>
+                            </button>
+                        </div>
+                    </div>
+                </header>
+
+                <!-- Article Cover Image -->
+                <div class="relative rounded-3xl overflow-hidden mb-10 shadow-lg border border-stone-200">
+                    <img id="article-cover-image" src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&q=80&w=1200" alt="Cover" class="w-full h-[350px] sm:h-[460px] object-cover">
+                    <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between bg-black/60 text-white text-xs px-4 py-2 rounded-2xl backdrop-blur-md">
+                        <span><i class="fa-solid fa-camera mr-1.5 text-amber-400"></i> Kulturang Pilipino: Sining, Wika at Pamana</span>
+                        <span class="hidden sm:inline text-stone-300">Pangkatang Gawain sa Filipino</span>
+                    </div>
+                </div>
+
+                <!-- EXPANDED TAGALOG ARTICLE CONTENT BODY -->
+                <div id="article-content-body" class="article-body font-sans text-stone-800">
+                    
+                    <p class="font-medium text-lg sm:text-xl leading-relaxed text-stone-900 bg-amber-500/10 p-5 rounded-2xl border-l-4 border-terracotta mb-8">
+                        Ang kultura ng Pilipinas ay hindi lamang isang nakaraang kabanata sa mga aklat ng kasaysayan; ito ay isang buhay, humihinga, at patuloy na umuunlad na habi ng ating pambansang kaluluwa. Mula sa mga sinaunang tradisyon ng ating mga ninuno hanggang sa makabagong pagpapahayag ng kabataan sa digital na panahon, ang ating pagkakakilanlan ay nananatiling matatag at puno ng kulay.
+                    </p>
+
+                    <h2>1. Panimula: Ang Habi ng Ating Pinagmulan</h2>
+                    <p>
+                        Bago pa man dumating ang mga dayuhang mananakop sa ating kapuluan, ang ating mga ninuno ay mayroon nang maunlad at mayaman na sistema ng pamumuhay. Mayroon na tayong sariling pamahalaan (mga barangay), sariling sistema ng pagsulat (ang Baybayin), at malalim na paniniwala sa kapaligiran at sa Maykapal.
+                    </p>
+                    <p>
+                        Sa paglipas ng mga siglo, ang ating kultura ay nahubog ng iba't ibang impluwensya—mula sa ating mga kalapit-bansa sa Asya hanggang sa Silangan at Kanluran. Subalit sa kabila ng mga pagbabagong ito, hindi nawala ang tunay na kakanyahan ng pagiging Pilipino: ang ating matibay na pananalig, pagmamahal sa pamilya, at likas na kasipagan.
+                    </p>
+
+                    <h2>2. Ang Sining at Wika Bilang Salamin ng Kaluluwa</h2>
+                    <p>
+                        Ang wikang Tagalog at ang iba't ibang wikang katutubo sa buong kapuluan ay hindi lamang simpleng kasangkapan sa pakikipagtalastasan. Ito ang imbakan ng ating mga karanasan, pangarap, at kolektibong kaisipan. Sa bawat salita tulad ng <em>"gigil"</em>, <em>"tadhana"</em>, at <em>"bayanihan"</em>, may nakatagong lalim ng damdamin na mahirap isalin sa ibang wika.
+                    </p>
+
+                    <!-- Embedded Image with Caption -->
+                    <div class="my-8">
+                        <img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&q=80&w=900" alt="Sining at Panitikan" class="w-full h-80 object-cover rounded-2xl shadow-md border border-stone-200">
+                        <p class="text-xs text-center text-editorialMuted mt-2 italic">
+                            Ang sining at panitikan ng Pilipinas ay patuloy na nagbibigay-buhay sa ating pambansang kamalayan.
+                        </p>
+                    </div>
+
+                    <p>
+                        Sa larangan ng sining, ang mga Pilipino ay kilala sa buong mundo dahil sa ating likas na pagiging malikhain. Mula sa mga makukulay na pintados at paghahabi ng inabel at t'nalak, hanggang sa modernong musika, teatro, at pelikula, ang ating sining ay patuloy na nagbibigay ng inspirasyon at boses sa ating mga ipinaglalaban.
+                    </p>
+
+                    <blockquote>
+                        "Ang hindi marunong magmahal sa sariling wika ay mas higit pa sa hayop at malansang isda."
+                        <span class="block text-xs font-sans not-italic text-stone-600 mt-2 font-semibold">— Dr. Jose P. Rizal</span>
+                    </blockquote>
+
+                    <h2>3. Tradisyon at Bayanihan: Ang Puso ng Komunidad</h2>
+                    <p>
+                        Isa sa mga pinakadakilang pamana ng ating kultura ay ang prinsipyo ng <strong>Bayanihan</strong>. Sa sinaunang panahon, literal na binubuhat ng mga magkakapitbahay ang bahay-kubo ng isang pamilya upang ilipat ito sa bagong lugar. Sa kasalukuyan, ang Bayanihan ay makikita sa ating kusa at walang pag-iimbot na pagtulong sa kapwa sa panahon ng sakuna, bagyo, at kagipitan.
+                    </p>
+                    <p>
+                        Ang ating mga pagdiriwang o <em>piyesta</em> ay isa ring patunay ng ating pagpapahalaga sa pagsasama-sama. Dito ay nagtitipon ang buong pamayanan upang magpasalamat sa mga biyaya, magsalo-salo sa masasarap na pagkain, at magpatuloy ng mga lumang tradisyon na nagbubuklod sa mga pamilya.
+                    </p>
+
+                    <h2>4. Modernong Hamon at ang Digital Age</h2>
+                    <p>
+                        Sa makabagong panahon ng social media at mabilis na globalisasyon, nahaharap ang kulturang Pilipino sa malaking hamon. Mabilis na pumapasok ang mga dayuhang kultura at uso sa kaisipan ng kabataan. Bagamat maganda ang maging bukas sa mundo, mahalagang hindi natin makalimutan ang ating sariling pinagmulan.
+                    </p>
+                    <p>
+                        Ang maganda rito, marami sa mga kabataan ngayon ang gumagamit mismo ng teknolohiya upang itaguyod ang pambansang pamana. Sa pamamagitan ng mga digital arts, vlogging, online storytelling, at social campaigns, muling binubuhay at ipinagmamalaki ang ating kasaysayan at mga wika sa buong mundo.
+                    </p>
+
+                    <!-- Decorative Highlight Box -->
+                    <div class="bg-gradient-to-r from-amber-100 to-amber-50 p-6 rounded-2xl border border-amber-300 my-8">
+                        <h3 class="font-bold text-amber-900 text-base mb-2 flex items-center gap-2">
+                            <i class="fa-solid fa-lightbulb text-amber-600"></i>
+                            Pagninilay ukol sa Pagkakaisa
+                        </h3>
+                        <p class="text-xs text-amber-950 leading-relaxed m-0">
+                            Ang tunay na pagmamahal sa bayan ay hindi nagtatapos sa pag-alaala sa nakaraan. Ito ay ang araw-araw na pagpili na maging mabuting mamamayan, ang paggalang sa ating kultura, at ang pagtulong sa ating kapwa Pilipino saanman tayo naroroon.
+                        </p>
+                    </div>
+
+                    <h2>5. Konklusyon: Panawagan sa Pagkilos</h2>
+                    <p>
+                        Ang pagkakakilanlang Pilipino ay hindi isang static o permanenteng estatwa; ito ay isang nagpapatuloy na kwento na tayo mismo ang nagsusulat. Sa ating mga kamay nakasalalay ang pagpapatuloy ng ating dakilang pamana.
+                    </p>
+                    <p>
+                        Ipagmalaki natin ang ating wika, tangkilikin ang ating sariling mga produkto at sining, at patuloy tayong magmahalan at magtulungan bilang isang bansa. Sapagkat sa huli, ang ating kultura ang ating pinakamatibay na sandata at pinakamagandang regalo sa susunod na henerasyon.
+                    </p>
+
+                </div>
+
+                <!-- COMMENT SECTION CONTAINER -->
+                <section class="mt-12 pt-10 border-t border-stone-200">
+                    <div class="flex items-center justify-between mb-8">
+                        <h3 class="font-serif text-2xl font-bold text-editorialDark flex items-center gap-2.5">
+                            <i class="fa-solid fa-comments text-terracotta text-xl"></i>
+                            <span>Global Discussion</span>
+                            <span id="comment-count-badge" class="text-xs font-sans font-bold bg-amber-100 text-amber-900 px-3 py-1 rounded-full border border-amber-300">10 Comments</span>
+                        </h3>
+                        <span class="text-xs text-editorialMuted">Join the conversation</span>
+                    </div>
+
+                    <!-- Add Comment Form Box -->
+                    <div class="bg-white p-5 sm:p-6 rounded-3xl border border-stone-200/90 shadow-sm mb-10">
+                        <h4 class="text-sm font-bold text-editorialDark mb-3 flex items-center gap-2">
+                            <i class="fa-solid fa-pen-to-square text-terracotta"></i>
+                            <span>Leave a Comment or Reaction</span>
+                        </h4>
+                        
+                        <form onsubmit="submitComment(event)" class="space-y-4">
+                            <div>
+                                <textarea id="comment-input" rows="3" required placeholder="Share your thoughts, perspectives, or feedback on this post..." class="w-full p-4 rounded-2xl border border-stone-200 bg-stone-50 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-terracotta transition"></textarea>
+                            </div>
+
+                            <div class="flex flex-wrap items-center justify-between gap-3">
+                                <div class="flex items-center gap-2">
+                                    <span class="text-xs text-editorialMuted font-medium">Posting as:</span>
+                                    <span id="posting-as-name" class="text-xs font-bold text-terracotta bg-terracottaLight px-2.5 py-1 rounded-full">Guest</span>
+                                </div>
+
+                                <button type="submit" class="px-6 py-2.5 bg-gradient-to-r from-terracotta to-amber-800 hover:from-terracottaHover text-white font-semibold text-xs rounded-xl shadow-md transition flex items-center gap-2">
+                                    <i class="fa-solid fa-paper-plane text-[10px]"></i>
+                                    <span>Post Comment</span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Dynamic Comments List (Includes 10 diverse global avatars) -->
+                    <div id="comments-list" class="space-y-4">
+                        
+                        <!-- Comment 1 -->
+                        <div class="p-5 rounded-2xl bg-white border border-stone-200/80 shadow-sm">
+                            <div class="flex items-start justify-between mb-2">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-blue-500 to-indigo-600 text-white font-bold text-xs flex items-center justify-center shadow-sm">
+                                        KS
+                                    </div>
+                                    <div>
+                                        <div class="flex items-center gap-2">
+                                            <span class="text-xs font-bold text-editorialDark">Kenji Sato</span>
+                                            <span class="text-[10px] font-bold bg-stone-100 text-stone-600 px-2 py-0.5 rounded-full"><i class="fa-solid fa-location-dot text-red-500 mr-1"></i>Tokyo, Japan</span>
+                                        </div>
+                                        <span class="text-[10px] text-editorialMuted">@kenji_sato • 2 hours ago</span>
+                                    </div>
+                                </div>
+                                <span class="text-xs font-semibold text-amber-800 bg-amber-50 px-2.5 py-1 rounded-full border border-amber-200">#CulturalAnalyst</span>
+                            </div>
+                            <p class="text-xs sm:text-sm text-stone-700 leading-relaxed mt-2 pl-13">
+                                This article is deeply insightful! The concept of "Bayanihan" resonates so closely with our community traditions in Japan. Incredible writeup by Group 1! 👏🔥
+                            </p>
+                        </div>
+
+                        <!-- Comment 2 -->
+                        <div class="p-5 rounded-2xl bg-white border border-stone-200/80 shadow-sm">
+                            <div class="flex items-start justify-between mb-2">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-emerald-500 to-teal-600 text-white font-bold text-xs flex items-center justify-center shadow-sm">
+                                        SR
+                                    </div>
+                                    <div>
+                                        <div class="flex items-center gap-2">
+                                            <span class="text-xs font-bold text-editorialDark">Sofia Ramirez</span>
+                                            <span class="text-[10px] font-bold bg-stone-100 text-stone-600 px-2 py-0.5 rounded-full"><i class="fa-solid fa-location-dot text-red-500 mr-1"></i>Madrid, Spain</span>
+                                        </div>
+                                        <span class="text-[10px] text-editorialMuted">@sofi_ramirez • 3 hours ago</span>
+                                    </div>
+                                </div>
+                                <span class="text-xs font-semibold text-amber-800 bg-amber-50 px-2.5 py-1 rounded-full border border-amber-200">#HeritageLover</span>
+                            </div>
+                            <p class="text-xs sm:text-sm text-stone-700 leading-relaxed mt-2 pl-13">
+                                ¡Que lindo! I love reading Tagalog text directly. You can really feel the passion for national heritage in every single paragraph! Super wholesome vibes! ✨
+                            </p>
+                        </div>
+
+                        <!-- Comment 3 -->
+                        <div class="p-5 rounded-2xl bg-white border border-stone-200/80 shadow-sm">
+                            <div class="flex items-start justify-between mb-2">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-amber-500 to-orange-600 text-white font-bold text-xs flex items-center justify-center shadow-sm">
+                                        TN
+                                    </div>
+                                    <div>
+                                        <div class="flex items-center gap-2">
+                                            <span class="text-xs font-bold text-editorialDark">Thabo Ndlovu</span>
+                                            <span class="text-[10px] font-bold bg-stone-100 text-stone-600 px-2 py-0.5 rounded-full"><i class="fa-solid fa-location-dot text-red-500 mr-1"></i>Cape Town, SA</span>
+                                        </div>
+                                        <span class="text-[10px] text-editorialMuted">@thabo_bantu • 5 hours ago</span>
+                                    </div>
+                                </div>
+                                <span class="text-xs font-semibold text-amber-800 bg-amber-50 px-2.5 py-1 rounded-full border border-amber-200">#GlobalVoice</span>
+                            </div>
+                            <p class="text-xs sm:text-sm text-stone-700 leading-relaxed mt-2 pl-13">
+                                The connection between Bayanihan and African Ubuntu philosophy ("I am because we are") is mind-blowing! True human connection knows no borders. 🌍🙌
+                            </p>
+                        </div>
+
+                        <!-- Comment 4 -->
+                        <div class="p-5 rounded-2xl bg-white border border-stone-200/80 shadow-sm">
+                            <div class="flex items-start justify-between mb-2">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-purple-500 to-pink-600 text-white font-bold text-xs flex items-center justify-center shadow-sm">
+                                        MC
+                                    </div>
+                                    <div>
+                                        <div class="flex items-center gap-2">
+                                            <span class="text-xs font-bold text-editorialDark">Maria Santos</span>
+                                            <span class="text-[10px] font-bold bg-stone-100 text-stone-600 px-2 py-0.5 rounded-full"><i class="fa-solid fa-location-dot text-red-500 mr-1"></i>Manila, PH</span>
+                                        </div>
+                                        <span class="text-[10px] text-editorialMuted">@maria_ph • 6 hours ago</span>
+                                    </div>
+                                </div>
+                                <span class="text-xs font-semibold text-amber-800 bg-amber-50 px-2.5 py-1 rounded-full border border-amber-200">#StudentRep</span>
+                            </div>
+                            <p class="text-xs sm:text-sm text-stone-700 leading-relaxed mt-2 pl-13">
+                                Grabeng ganda ng pagkakasulat! Salute to Group 1 (Enzo, Irish, JP, Franco, Melbert, Lyle, Robie, Amiel) for this top-tier assignment effort! 💯🇵🇭
+                            </p>
+                        </div>
+
+                        <!-- Comment 5 -->
+                        <div class="p-5 rounded-2xl bg-white border border-stone-200/80 shadow-sm">
+                            <div class="flex items-start justify-between mb-2">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-cyan-500 to-blue-600 text-white font-bold text-xs flex items-center justify-center shadow-sm">
+                                        DL
+                                    </div>
+                                    <div>
+                                        <div class="flex items-center gap-2">
+                                            <span class="text-xs font-bold text-editorialDark">David Lee</span>
+                                            <span class="text-[10px] font-bold bg-stone-100 text-stone-600 px-2 py-0.5 rounded-full"><i class="fa-solid fa-location-dot text-red-500 mr-1"></i>Toronto, Canada</span>
+                                        </div>
+                                        <span class="text-[10px] text-editorialMuted">@dave_toronto • 7 hours ago</span>
+                                    </div>
+                                </div>
+                                <span class="text-xs font-semibold text-amber-800 bg-amber-50 px-2.5 py-1 rounded-full border border-amber-200">#DiasporaReader</span>
+                            </div>
+                            <p class="text-xs sm:text-sm text-stone-700 leading-relaxed mt-2 pl-13">
+                                As someone in the diaspora, reading articles like this brings so much warmth and pride! Keep sharing these beautiful essays. High key impressive!
+                            </p>
+                        </div>
+
+                        <!-- Comment 6 -->
+                        <div class="p-5 rounded-2xl bg-white border border-stone-200/80 shadow-sm">
+                            <div class="flex items-start justify-between mb-2">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-rose-500 to-red-600 text-white font-bold text-xs flex items-center justify-center shadow-sm">
+                                        HK
+                                    </div>
+                                    <div>
+                                        <div class="flex items-center gap-2">
+                                            <span class="text-xs font-bold text-editorialDark">Hana Kim</span>
+                                            <span class="text-[10px] font-bold bg-stone-100 text-stone-600 px-2 py-0.5 rounded-full"><i class="fa-solid fa-location-dot text-red-500 mr-1"></i>Seoul, SK</span>
+                                        </div>
+                                        <span class="text-[10px] text-editorialMuted">@hana_seoul • 8 hours ago</span>
+                                    </div>
+                                </div>
+                                <span class="text-xs font-semibold text-amber-800 bg-amber-50 px-2.5 py-1 rounded-full border border-amber-200">#CultureExchange</span>
+                            </div>
+                            <p class="text-xs sm:text-sm text-stone-700 leading-relaxed mt-2 pl-13">
+                                Loved section 4 about youth and social media! Gen Z taking charge of preserving cultural heritage is the coolest trend globally right now. 🌸
+                            </p>
+                        </div>
+
+                        <!-- Comment 7 -->
+                        <div class="p-5 rounded-2xl bg-white border border-stone-200/80 shadow-sm">
+                            <div class="flex items-start justify-between mb-2">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-yellow-500 to-amber-600 text-white font-bold text-xs flex items-center justify-center shadow-sm">
+                                        LT
+                                    </div>
+                                    <div>
+                                        <div class="flex items-center gap-2">
+                                            <span class="text-xs font-bold text-editorialDark">Liam Taylor</span>
+                                            <span class="text-[10px] font-bold bg-stone-100 text-stone-600 px-2 py-0.5 rounded-full"><i class="fa-solid fa-location-dot text-red-500 mr-1"></i>Melbourne, AU</span>
+                                        </div>
+                                        <span class="text-[10px] text-editorialMuted">@liam_melb • 9 hours ago</span>
+                                    </div>
+                                </div>
+                                <span class="text-xs font-semibold text-amber-800 bg-amber-50 px-2.5 py-1 rounded-full border border-amber-200">#HistoryBuff</span>
+                            </div>
+                            <p class="text-xs sm:text-sm text-stone-700 leading-relaxed mt-2 pl-13">
+                                Very well written article! The quotation from Dr. Jose Rizal hit hard. Language really is the mirror of a nation's soul. Cheers mate! 🍻
+                            </p>
+                        </div>
+
+                        <!-- Comment 8 -->
+                        <div class="p-5 rounded-2xl bg-white border border-stone-200/80 shadow-sm">
+                            <div class="flex items-start justify-between mb-2">
+                                <div class="flex items-center gap-3">
+                                    <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-violet-500 to-purple-600 text-white font-bold text-xs flex items-center justify-center shadow-sm">
+                                        AC
+                                    </div>
+                                    <div>
+                                        <div class="flex items-center gap-2">
+                                            <span class="text-xs font-bold text-editorialDark">Ananya Chen</span>
+                                            <span class="text-[10px] font-bold bg-stone-100 text-stone-600 px-2 py-0.5 rounded-full"><i class="fa-solid fa-location-dot text-red-500 mr-1"></i>Singapore</span>
+                                        </div>
+                                        <span class="text-[10px] text-editorialMuted">@ananya_sg • 10 hours ago</span>
+                                    </div>
+                                </div>
+                                <span class="text-xs font-semibold text-amber-800 bg-amber-50 px-2.5 py-1 rounded-full border border-amber-200">#ResearchPassionate</span>
+                            </div>
+                            <p class="text-xs sm:text-sm text-stone-700 leading-relaxed mt-2 pl-13">
+                                Absolutely loved the callout box on unity. The layout and typography of OmniCulture make reading long-form essays such a delight! 📚✨
+                            </p>
+                        </div>
+
+                    </div>
+                </section>
+
+            </div>
+
+            <!-- RIGHT SIDEBAR COLUMN: ABOUT POST, POLL, GAME, TRIVIA (LG: COL-SPAN-4) -->
+            <aside class="lg:col-span-4 space-y-8">
+                
+                <!-- WIDGET 1: ABOUT THIS POST & GROUP 1 TEAM ROSTER -->
+                <div class="bg-white p-6 rounded-3xl border border-stone-200/90 shadow-sm">
+                    <div class="flex items-center justify-between mb-4 pb-3 border-b border-stone-100">
+                        <h3 class="font-serif font-bold text-lg text-editorialDark flex items-center gap-2">
+                            <i class="fa-solid fa-users text-terracotta"></i>
+                            <span>About This Post</span>
+                        </h3>
+                        <span class="text-[10px] font-extrabold uppercase bg-amber-100 text-amber-900 px-2.5 py-0.5 rounded-full border border-amber-300">Group 1</span>
+                    </div>
+
+                    <p class="text-xs text-editorialMuted mb-4 leading-relaxed">
+                        This featured essay was collaboratively authored and curated by <strong>Group 1</strong> for the Filipino Cultural Heritage Assignment.
+                    </p>
+
+                    <h4 class="text-xs font-bold uppercase tracking-wider text-stone-500 mb-3">Group Members Roster</h4>
+
+                    <div class="space-y-2.5">
+                        <div class="flex items-center gap-2.5 p-2 rounded-xl bg-stone-50 hover:bg-amber-50/60 transition border border-stone-100">
+                            <div class="w-7 h-7 rounded-full bg-terracotta text-white font-bold text-[10px] flex items-center justify-center">ED</div>
+                            <div>
+                                <div class="text-xs font-bold text-editorialDark">Enzo Delima</div>
+                                <div class="text-[10px] text-editorialMuted">Team Member</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-2.5 p-2 rounded-xl bg-stone-50 hover:bg-amber-50/60 transition border border-stone-100">
+                            <div class="w-7 h-7 rounded-full bg-amber-600 text-white font-bold text-[10px] flex items-center justify-center">IC</div>
+                            <div>
+                                <div class="text-xs font-bold text-editorialDark">Irish Rose Castañeda</div>
+                                <div class="text-[10px] text-editorialMuted">Team Member</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-2.5 p-2 rounded-xl bg-stone-50 hover:bg-amber-50/60 transition border border-stone-100">
+                            <div class="w-7 h-7 rounded-full bg-stone-700 text-white font-bold text-[10px] flex items-center justify-center">JP</div>
+                            <div>
+                                <div class="text-xs font-bold text-editorialDark">John Paul Palma</div>
+                                <div class="text-[10px] text-editorialMuted">Team Member</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-2.5 p-2 rounded-xl bg-stone-50 hover:bg-amber-50/60 transition border border-stone-100">
+                            <div class="w-7 h-7 rounded-full bg-amber-700 text-white font-bold text-[10px] flex items-center justify-center">FI</div>
+                            <div>
+                                <div class="text-xs font-bold text-editorialDark">Franco Inigo</div>
+                                <div class="text-[10px] text-editorialMuted">Team Member</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-2.5 p-2 rounded-xl bg-stone-50 hover:bg-amber-50/60 transition border border-stone-100">
+                            <div class="w-7 h-7 rounded-full bg-emerald-700 text-white font-bold text-[10px] flex items-center justify-center">JM</div>
+                            <div>
+                                <div class="text-xs font-bold text-editorialDark">John Melbert Morcilla</div>
+                                <div class="text-[10px] text-editorialMuted">Team Member</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-2.5 p-2 rounded-xl bg-stone-50 hover:bg-amber-50/60 transition border border-stone-100">
+                            <div class="w-7 h-7 rounded-full bg-indigo-700 text-white font-bold text-[10px] flex items-center justify-center">LB</div>
+                            <div>
+                                <div class="text-xs font-bold text-editorialDark">Lyle Belano</div>
+                                <div class="text-[10px] text-editorialMuted">Team Member</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-2.5 p-2 rounded-xl bg-stone-50 hover:bg-amber-50/60 transition border border-stone-100">
+                            <div class="w-7 h-7 rounded-full bg-blue-700 text-white font-bold text-[10px] flex items-center justify-center">PR</div>
+                            <div>
+                                <div class="text-xs font-bold text-editorialDark">Prince Robie Limbaro</div>
+                                <div class="text-[10px] text-editorialMuted">Team Member</div>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-2.5 p-2 rounded-xl bg-stone-50 hover:bg-amber-50/60 transition border border-stone-100">
+                            <div class="w-7 h-7 rounded-full bg-purple-700 text-white font-bold text-[10px] flex items-center justify-center">AA</div>
+                            <div>
+                                <div class="text-xs font-bold text-editorialDark">Amiel Amar</div>
+                                <div class="text-[10px] text-editorialMuted">Team Member</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WIDGET 2: INTERACTIVE POLL -->
+                <div class="bg-gradient-to-br from-stone-900 to-amber-950 text-amber-50 p-6 rounded-3xl shadow-xl border border-amber-500/30">
+                    <div class="flex items-center gap-2 text-amber-400 text-xs font-bold uppercase tracking-widest mb-2">
+                        <i class="fa-solid fa-square-poll-vertical"></i>
+                        <span>Reader Poll</span>
+                    </div>
+
+                    <h4 class="font-serif font-bold text-base text-white mb-4">
+                        Which aspect of cultural heritage feels most vital to protect today?
+                    </h4>
+
+                    <div id="poll-container" class="space-y-3">
+                        <button onclick="votePoll(0)" class="poll-opt w-full p-3 rounded-xl bg-stone-800/80 hover:bg-stone-700 border border-amber-500/20 text-left text-xs font-medium transition flex items-center justify-between">
+                            <span>1. Native Language & Literature</span>
+                            <span class="poll-pct hidden font-mono font-bold text-amber-400">42%</span>
+                        </button>
+                        <button onclick="votePoll(1)" class="poll-opt w-full p-3 rounded-xl bg-stone-800/80 hover:bg-stone-700 border border-amber-500/20 text-left text-xs font-medium transition flex items-center justify-between">
+                            <span>2. Community Spirit (Bayanihan)</span>
+                            <span class="poll-pct hidden font-mono font-bold text-amber-400">35%</span>
+                        </button>
+                        <button onclick="votePoll(2)" class="poll-opt w-full p-3 rounded-xl bg-stone-800/80 hover:bg-stone-700 border border-amber-500/20 text-left text-xs font-medium transition flex items-center justify-between">
+                            <span>3. Traditional Crafts & Music</span>
+                            <span class="poll-pct hidden font-mono font-bold text-amber-400">23%</span>
+                        </button>
+                    </div>
+                    <div id="poll-thanks" class="hidden text-center text-xs text-amber-300 mt-3 font-semibold">
+                        Thanks for voting! Your voice counts.
+                    </div>
+                </div>
+
+                <!-- WIDGET 3: THIS OR THAT MINI GAME -->
+                <div class="bg-white p-6 rounded-3xl border border-stone-200/90 shadow-sm">
+                    <div class="flex items-center gap-2 text-terracotta text-xs font-bold uppercase tracking-wider mb-2">
+                        <i class="fa-solid fa-gamepad"></i>
+                        <span>Cultural This or That</span>
+                    </div>
+
+                    <h4 class="font-serif font-bold text-base text-editorialDark mb-3">
+                        Quick Cultural Vibe Check
+                    </h4>
+
+                    <div class="grid grid-cols-2 gap-3">
+                        <button onclick="selectThisThat(this)" class="p-3 rounded-2xl bg-amber-50 hover:bg-terracottaLight border border-amber-200 text-center text-xs font-bold text-editorialDark transition">
+                            🏮 Traditional Fiestas
+                        </button>
+                        <button onclick="selectThisThat(this)" class="p-3 rounded-2xl bg-amber-50 hover:bg-terracottaLight border border-amber-200 text-center text-xs font-bold text-editorialDark transition">
+                            🎧 Indie Music Gigs
+                        </button>
+                    </div>
+                </div>
+
+                <!-- WIDGET 4: DID YOU KNOW TRIVIA -->
+                <div class="bg-amber-50 p-6 rounded-3xl border border-amber-200 text-amber-950">
+                    <div class="flex items-center gap-2 text-amber-800 text-xs font-bold uppercase tracking-wider mb-2">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <span>Did You Know?</span>
+                    </div>
+                    <p class="text-xs leading-relaxed italic">
+                        The word <strong>"Bayanihan"</strong> comes from the Tagalog word <em>"bayan"</em>, meaning nation, town, or community. It symbolizes moving forward as one single entity!
+                    </p>
+                </div>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+    <!-- JAVASCRIPT APP LOGIC -->
+    <script>
+        // Global State Variables
+        let currentUser = "Guest";
+        let isBookmarked = false;
+        let currentPost = "hero";
+
+        // Simulated Posts Database
+        const articlesDB = {
+            "hero": {
+                title: "Pagkakakilanlan at Kultura: Ang Makulay na Pamana ng Lahing Pilipino",
+                subtitle: "Isang Malalim na Pagninilay sa Ating Sining, Wika, Tradisyon, at Kilusang Panlipunan sa Gitna ng Makabagong Panahon.",
+                author: "Group 1",
+                readTime: "Oktubre 12, 2026 • 8 Minuto Basahin",
+                badge: "Tagalog • Featured Essay",
+                cover: "https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&q=80&w=1200"
+            },
+            "wabi-sabi": {
+                title: "The Philosophy of Wabi Sabi: Perfection in Imperfection",
+                subtitle: "How traditional Japanese aesthetics teach us to embrace worn edges, natural cracks, and the passing of time.",
+                author: "Kenji Sato",
+                readTime: "October 10, 2026 • 4 min read",
+                badge: "Japan • Philosophy",
+                cover: "https://images.unsplash.com/photo-1503899036084-c55cdd92da26?auto=format&fit=crop&q=80&w=1200"
+            },
+            "dia-muertos": {
+                title: "Día de los Muertos: Celebrating Family Memories with Joy",
+                subtitle: "Vibrant marigold flowers, custom altars, and incredible food turn memory into a pure celebration.",
+                author: "Sofia Ramirez",
+                readTime: "October 08, 2026 • 6 min read",
+                badge: "Mexico • Traditions",
+                cover: "https://images.unsplash.com/photo-1512813195386-6cf811ad3542?auto=format&fit=crop&q=80&w=1200"
+            },
+            "ubuntu": {
+                title: "Ubuntu Wisdom: 'I Am Because We Are'",
+                subtitle: "Exploring the ancient Bantu concept of genuine empathy, community bond, and shared humanity.",
+                author: "Thabo Ndlovu",
+                readTime: "October 05, 2026 • 5 min read",
+                badge: "Bantu • Community",
+                cover: "https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&q=80&w=1200"
+            }
+        };
+
+        // Initialize App on Window Load
+        window.onload = function() {
+            runCinematicProgress();
+        };
+
+        // Cinematic Loading Animation Logic
+        function runCinematicProgress() {
+            let progress = 0;
+            const progressBar = document.getElementById("intro-progress");
+            const statusText = document.getElementById("intro-status");
+
+            const interval = setInterval(() => {
+                progress += 5;
+                if (progressBar) progressBar.style.width = progress + "%";
+                if (statusText) statusText.innerText = "Setting up your feed... " + progress + "%";
+
+                if (progress >= 100) {
+                    clearInterval(interval);
+                    setTimeout(() => {
+                        document.getElementById("intro-stage-1").classList.add("hidden");
+                        document.getElementById("intro-stage-2").classList.remove("hidden");
+                    }, 400);
+                }
+            }, 60);
+        }
+
+        function handleUserLogin(e) {
+            e.preventDefault();
+            const inputName = document.getElementById("user-display-name").value.trim();
+            enterMainBlog(inputName || "Global Explorer");
+        }
+
+        function enterMainBlog(username) {
+            currentUser = username;
+            document.getElementById("user-name-display").innerText = username;
+            document.getElementById("posting-as-name").innerText = username;
+
+            const intro = document.getElementById("intro-container");
+            intro.style.opacity = "0";
+            intro.style.pointerEvents = "none";
+            setTimeout(() => {
+                intro.classList.add("hidden");
+            }, 1000);
+        }
+
+        function replayCinematicIntro() {
+            const intro = document.getElementById("intro-container");
+            intro.classList.remove("hidden");
+            intro.style.pointerEvents = "auto";
+            setTimeout(() => {
+                intro.style.opacity = "1";
+                document.getElementById("intro-stage-2").classList.add("hidden");
+                document.getElementById("intro-stage-1").classList.remove("hidden");
+                runCinematicProgress();
+            }, 50);
+        }
+
+        // View Switchers
+        function showFeedView() {
+            document.getElementById("feed-container").classList.remove("hidden");
+            document.getElementById("article-view").classList.add("hidden");
+            document.getElementById("feed-btn-nav").classList.add("hidden");
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+
+        function openArticle(key) {
+            currentPost = key;
+            const data = articlesDB[key] || articlesDB["hero"];
+
+            document.getElementById("article-title").innerText = data.title;
+            document.getElementById("article-subtitle").innerText = data.subtitle;
+            document.getElementById("article-author-name").innerText = data.author;
+            document.getElementById("article-date-read").innerText = data.readTime;
+            document.getElementById("article-category-badge").innerText = data.badge;
+            document.getElementById("article-cover-image").src = data.cover;
+
+            document.getElementById("feed-container").classList.add("hidden");
+            document.getElementById("article-view").classList.remove("hidden");
+            document.getElementById("feed-btn-nav").classList.remove("hidden");
+
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+
+        // Category Filter Logic
+        function setCategoryFilter(category) {
+            const pills = document.querySelectorAll('.cat-pill');
+            pills.forEach(p => {
+                if (p.dataset.cat === category) {
+                    p.className = "cat-pill px-4 py-2 rounded-full text-xs font-semibold bg-editorialDark text-white shadow-sm shrink-0 transition";
+                } else {
+                    p.className = "cat-pill px-4 py-2 rounded-full text-xs font-semibold bg-stone-100 hover:bg-stone-200 text-editorialMuted shrink-0 transition";
+                }
+            });
+
+            const cards = document.querySelectorAll('.post-card');
+            const heroCard = document.getElementById('featured-hero-card');
+
+            cards.forEach(card => {
+                if (category === 'all' || card.dataset.category === category) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+
+            if (category === 'all' || category === 'featured') {
+                heroCard.classList.remove('hidden');
+            } else {
+                heroCard.classList.add('hidden');
+            }
+        }
+
+        // Search Filter Logic
+        function filterPosts() {
+            const query = document.getElementById('feed-search').value.toLowerCase();
+            const cards = document.querySelectorAll('.post-card');
+
+            cards.forEach(card => {
+                const text = card.innerText.toLowerCase();
+                if (text.includes(query)) {
+                    card.classList.remove('hidden');
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
+        }
+
+        // Interactive Poll Handler
+        function votePoll(index) {
+            const pcts = document.querySelectorAll('.poll-pct');
+            pcts.forEach(pct => pct.classList.remove('hidden'));
+            document.getElementById('poll-thanks').classList.remove('hidden');
+        }
+
+        // Interactive Mini Game Handler
+        function selectThisThat(btn) {
+            btn.classList.add('ring-2', 'ring-terracotta', 'bg-terracottaLight');
+        }
+
+        // Dynamic Comment Submission Logic
+        function submitComment(e) {
+            e.preventDefault();
+            const input = document.getElementById("comment-input");
+            const text = input.value.trim();
+            if (!text) return;
+
+            const commentsList = document.getElementById("comments-list");
+            const userInitials = currentUser.slice(0, 2).toUpperCase() || "GU";
+
+            const newCommentHTML = `
+                <div class="p-5 rounded-2xl bg-amber-50/80 border border-amber-300 shadow-sm animate-float-up">
+                    <div class="flex items-start justify-between mb-2">
+                        <div class="flex items-center gap-3">
+                            <div class="w-10 h-10 rounded-full bg-gradient-to-tr from-terracotta to-amberAccent text-white font-bold text-xs flex items-center justify-center shadow-sm">
+                                ${userInitials}
+                            </div>
+                            <div>
+                                <div class="flex items-center gap-2">
+                                    <span class="text-xs font-bold text-editorialDark">${currentUser}</span>
+                                    <span class="text-[10px] font-bold bg-amber-200 text-amber-900 px-2 py-0.5 rounded-full"><i class="fa-solid fa-bolt text-amber-600 mr-1"></i>New Commenter</span>
+                                </div>
+                                <span class="text-[10px] text-editorialMuted">Just now</span>
+                            </div>
+                        </div>
+                        <span class="text-xs font-semibold text-terracotta bg-terracottaLight px-2.5 py-1 rounded-full border border-amber-300">#CommunityMember</span>
+                    </div>
+                    <p class="text-xs sm:text-sm text-stone-800 leading-relaxed mt-2 pl-13 font-medium">
+                        ${text}
+                    </p>
+                </div>
+            `;
+
+            commentsList.insertAdjacentHTML('afterbegin', newCommentHTML);
+            input.value = "";
+
+            // Update comment count badge
+            const countBadge = document.getElementById("comment-count-badge");
+            let currentCount = parseInt(countBadge.innerText) || 10;
+            countBadge.innerText = (currentCount + 1) + " Comments";
+        }
+
+        // Bookmark Toggle Button Logic
+        function toggleBookmark() {
+            isBookmarked = !isBookmarked;
+            const btn = document.getElementById("bookmark-btn");
+            if (isBookmarked) {
+                btn.innerHTML = '<i class="fa-solid fa-bookmark text-terracotta"></i>';
+                btn.classList.add('bg-terracottaLight');
+            } else {
+                btn.innerHTML = '<i class="fa-regular fa-bookmark"></i>';
+                btn.classList.remove('bg-terracottaLight');
+            }
+        }
+
+        // Share Button Simulation Logic
+        function shareArticle() {
+            const tempInput = document.createElement("input");
+            tempInput.value = window.location.href;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+
+            alert("Article link copied to clipboard!");
+        }
+    </script>
+</body>
+</html>
+
+  <script>
+    
+  </script>
+</body>
+</html>
